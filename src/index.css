@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EEEEEE;
+  height: 100vh;
+}
+
+.calculator {
+  position: relative;
+  background: #22252D;
+  border-radius: 10px;
+  width: 270px;
+}
+
+.calculator #screen {
+  padding: 20px 30px;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.calculator #screen #sum, .calculator #screen #display {
+  word-break: break-all;
+  word-wrap: break-word;
+  text-align: right;
+}
+
+.calculator #screen #sum {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.calculator #screen #display {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.calculator .keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #292D36;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.calculator .keyboard .button-container {
+  display: grid;
+  justify-content: center;
+  gap: 12px;
+  grid-template-columns: repeat(4, 50px);
+  grid-template-rows: repeat(5, 50px);
+  width: 100%;
+  padding: 15px 30px;
+}
+
+.calculator .keyboard .button-container .btn {
+  width: 100%;
+  background: #22252D;
+  border: none;
+  border-radius: 3px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.calculator .keyboard .button-container .btn:hover {
+  opacity: 0.8;
+}
+
+.calculator .operator, .calculator .equals {
+  color: #D96161;
+}
+
+.calculator .negative, .calculator .number, .calculator .zero, .calculator .decimal {
+  color: #fff;
+}
+
+.calculator .reset {
+  color: #2CB39C;
+}
+
+.calculator .zero, .calculator .reset {
+  grid-column: span 2;
+}
+
+/* .calculator .speaker {
+  margin-bottom: 15px;
+  background: #474B52;
+  width: 40%;
+  height: 5px;
+  border-radius: 20px;
+} */
